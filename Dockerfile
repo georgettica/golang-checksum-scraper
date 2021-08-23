@@ -7,8 +7,8 @@ FROM python:3.8-slim-buster
 WORKDIR /app
 
 COPY requirements.txt requirements.txt
-RUN pip3 install -r requirements.txt
+RUN pip3 install -r requirements.txt --user
 
 COPY . .
 
-CMD [ "python3", "./get-checksum.py"]
+CMD [ "python3", "./golang-checksum-scraper.py"]

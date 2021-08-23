@@ -47,6 +47,10 @@ for row_num in range(len(body_rows)): # A row at a time
 
 df = pd.DataFrame(data=all_rows,columns=headings)
 
-df = df[(df['Kind']=="Archive") & (df['OS'] == platform.system()) & (df['Arch'] == platform.processor().replace("_","-"))]
+processor = platform.processor().replace("_","-")
+if not processor:
+    processor = "x86-64"
+
+df = df[(df['Kind']=="Archive") & (df['OS'] == platform.system()) & (df['Arch'] == processor)]
 
 print(df["SHA256 Checksum"].values[0])
