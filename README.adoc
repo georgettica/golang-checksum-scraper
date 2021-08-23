@@ -1,0 +1,11 @@
+= golang-checksum-scraper 
+:toc:
+
+== Purpose
+This repo holds a script ./golang-checksum-scraper.py that allows getting the checksum of the latest release (currently hardcoded) for verifying the golang release you are pulling is actually the one you should use
+
+== Usage
+=== Locally
+run `python3 ./golang-checksum-scraper.py` to get the checksum you are longing for
+=== Container
+build and run to get the same result
