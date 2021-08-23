@@ -7,5 +7,6 @@ This repo holds a script ./golang-checksum-scraper.py that allows getting the ch
 == Usage
 === Locally
 run `python3 ./golang-checksum-scraper.py` to get the checksum you are longing for
+
 === Container
 build and run to get the same result
