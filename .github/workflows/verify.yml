@@ -60,7 +60,7 @@ jobs:
           exit ${code}
         fi
     - name: check mypy package # will remove true when issue is fixed
-      run: mypy --install-types --non-interactive ./golang-checksum-scraper.py || true
+      run: mypy ./golang-checksum-scraper.py
     - run: shopt -s globstar && pyupgrade --py36-plus **/*.py
     - run: safety check
 #    - name: Install dependencies
