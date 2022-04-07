@@ -1,0 +1,4 @@
+labels:
+# delete the branch when merge is completed
+merges:
+  - action: delete_branch
