@@ -8,12 +8,15 @@
 
 name: Verify Python valid
 
+permissions:
+  contents: read
+
 on:
   pull_request:
-    branch:
+    branches:
     - main
   push:
-    branch:
+    branches:
     - main
 jobs:
   verify:
