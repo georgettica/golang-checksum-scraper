@@ -2,7 +2,7 @@
 
 # Dockerfile pulled from https://docs.docker.com/language/python/build-images/
 
-FROM python:3.11.0rc2-slim-buster
+FROM python:3.11.0-slim-buster
 
 WORKDIR /app
 
